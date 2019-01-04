@@ -28,10 +28,9 @@ ext['springCloudVersion'] = 'Greenwich.RC2'
 
 dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-actuator')
-	implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server')
+	implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-client')
+	runtimeOnly('org.springframework.boot:spring-boot-devtools')
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
-		implementation('org.springframework.boot:spring-boot-devtools')
-
 }
 
 dependencyManagement {
